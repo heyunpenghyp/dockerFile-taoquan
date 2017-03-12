@@ -7,6 +7,7 @@ RUN apt-get update \
     && git clone https://github.com/heyunpenghyp/taoquan.git \
     && cd taoquan \
     && mvn package -Dmaven.test.skip=true \
+    && cd target \
     && cp taoquan.jar ../webapps \
     && cd ../.. \
     && rm -rf taoquan \

@@ -12,4 +12,4 @@ RUN apt-get update \
     && cd ../.. \
     && rm -rf taoquan \
     && cd webapps \
-    && CMD [ "java", "-jar", "taoquan.jar" ]
+CMD [ "java", "-jar", "taoquan.jar" ]

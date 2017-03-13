@@ -6,7 +6,6 @@ RUN apt-get update \
     && cd taoquan \
     && mvn package -Dmaven.test.skip=true \
     && cd target \
-    && cp taoquan.jar ../../webapps \
-    && cd ../.. \
-    && cd webapps \
+    && cp taoquan.jar ../../webapps 
+    
 CMD [ "java", "-jar", "taoquan.jar" ]

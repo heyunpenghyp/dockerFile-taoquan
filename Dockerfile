@@ -10,6 +10,5 @@ RUN apt-get update \
     && cd target \
     && cp taoquan.jar ../webapps \
     && cd ../.. \
-    && rm -rf taoquan \
     && cd webapps \
 CMD [ "java", "-jar", "taoquan.jar" ]

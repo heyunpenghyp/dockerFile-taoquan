@@ -10,4 +10,4 @@ RUN apt-get update \
     && cp taoquan.jar ../../webapps \ 
     && cd ../../webapps
 EXPOSE 8090   
-CMD [ "java", "-jar", "taoquan.jar" ]
+CMD [ "java", "-jar", "webapps/taoquan.jar" ]
